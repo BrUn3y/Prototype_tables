@@ -183,15 +183,18 @@ var table = "<div style='float:left; border-right-width:3px;border-right-style: 
     tables[table_reserver.table_no-1].total_chair=tables[table_reserver.table_no-1].total_chair-10;
     tables[table_reserver.table_no-1].status=false;
     $("#table_"+table_reserver.table_no).css('background-color', '#FC4349');
+    $("#table_"+table_reserver.table_no).css('color', '#FFF');
      $('#myModal').modal('hide');
   });
 
   $("#save_chair").click(function(){
     tables[table_reserver.table_no-1].total_chair=tables[table_reserver.table_no-1].total_chair-1;
     $("#table_"+table_reserver.table_no).css('background-color', '#6DBCDB');
+    $("#table_"+table_reserver.table_no).css('color', '#FFF');
     if (tables[table_reserver.table_no-1].total_chair == 0) {
       tables[table_reserver.table_no-1].status=false;
       $("#table_"+table_reserver.table_no).css('background-color', '#FC4349');
+      $("#table_"+table_reserver.table_no).css('color', '#FFF');
     }
     $('#myModal').modal('hide');
   });
@@ -199,9 +202,11 @@ var table = "<div style='float:left; border-right-width:3px;border-right-style: 
   $("#save_5chair").click(function(){
     tables[table_reserver.table_no-1].total_chair=tables[table_reserver.table_no-1].total_chair-5;
     $("#table_"+table_reserver.table_no).css('background-color', '#6DBCDB');
+    $("#table_"+table_reserver.table_no).css('color', '#FFF');
     if (tables[table_reserver.table_no-1].total_chair == 0) {
       tables[table_reserver.table_no-1].status=false;
       $("#table_"+table_reserver.table_no).css('background-color', '#FC4349');
+      $("#table_"+table_reserver.table_no).css('color', '#FFF');
     }
     $('#myModal').modal('hide');
 
