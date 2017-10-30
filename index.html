@@ -8,55 +8,60 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
   </head>
   <body>
-    <center class="escenario">
-        <p>ESCENARIO</p>
-    </center>
-    <center class="pista">
-        <p>PISTA DE BAILE</p>
-    </center>
 
-     <center>
-       <div id="dashboard" class="row dashboard">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card-info">
+            <!--Hide label-->
+            <p class="label-select">Seleccionar Mesa</p>
+            <!--Hide label-->
 
-       </div>
-     </center>
+            <!--Show data Info-->
+            <h4>
+              Mesa numero :
+              <small class="text-muted" id="table_no"></small>
+            </h4>
+            <h4>
+              Estatus :
+              <small class="text-muted" id="status"></small>
+            </h4>
+            <h4>
+              Numero de sillas disponibles :
+              <small class="text-muted" id="total_chair"></small>
+            </h4>
+            <!--Show data Info-->
+
+            <div class="row" style="margin-bottom: 30px;margin-top: 30px;">
+              <div class="col-xs-4">
+                <center>
+                    <button type="button" id="save_table" class="btn btn-success select-table">10 Personas</button>
+                </center>
+              </div>
+              <div class="col-xs-4">
+                <center>
+                    <button type="button" id="save_5chair" class="btn btn-success select-table">5 Personas</button>
+                </center>
+              </div>
+              <div class="col-xs-4">
+                <center>
+                    <button type="button" id="save_chair"class="btn btn-success select-table">1 Persona</button>
+                </center>
+              </div>
+            </div>
 
 
+          </div>
 
-    <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+        </div>
+        <div class="col-lg-8">
+          <center>
+            <div id="dashboard" class="row dashboard">
+            </div>
+          </center>
 
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Mesa Header</h4>
+        </div>
+
       </div>
-      <div class="modal-body">
-        <h4>Numero de mesa:</h4>
-        <span id="table_no"></span>
-        <h4>Estatus:</h4>
-        <span id="status"></span>
-        <h4>Total de sillas:</h4>
-        <span id="total_chair"></span>
-        <!--h4>Representante:</h4>
-        <span id="lead"></span-->
-        <br>
-        <button type="button" name="button" id="save_table"> Reservar mesa</button>
-        <button type="button" name="button" id="save_5chair">Reservar 5 sillas</button>
-        <button type="button" name="button" id="save_chair"> Reservar Silla</button>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
 
 
   </body>
